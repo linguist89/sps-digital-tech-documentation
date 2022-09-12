@@ -1,0 +1,26 @@
+I"A<h1 id="github-pages">Github Pages</h1>
+
+<p>You can use the millidocs theme with github pages by adding it as a <code>remote_theme</code>.</p>
+
+<pre><code>---
+title: Millidocs Theme
+description: Documentation for small projects
+url: "https://my-url"
+
+remote_theme: alexander-heimbuch/millidocs
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+---
+</code></pre>
+
+<p>For more details visit the <a href="https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/">Github Blog Post</a>.</p>
+:ET

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Github Pages
+title: DataTables
 navigation: 3
 ---
 

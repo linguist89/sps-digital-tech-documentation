@@ -1,0 +1,17 @@
+I"Ÿ<h1 id="navigation">Navigation</h1>
+
+<p>The navigation supports especially only one level. If you need deep nested structures you propably should use a larger documentation system like <a href="https://www.gitbook.com/">GitBook</a>.</p>
+
+<h2 id="adding-a-page-to-navigation">Adding a Page to Navigation</h2>
+
+<p>Not every page by default is part of the navigation. If you want to add a page to the navigation you have to add the <code>navigation</code> attribute with a desired <code>index</code>:</p>
+
+<pre><code>---
+layout: page
+title: Navigation
+navigation: 2
+---
+</code></pre>
+
+<p>The navigation <code>index</code> is starting with 1 representing the first item.</p>
+:ET

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Navigation
+title: Charts
 navigation: 2
 ---
 
