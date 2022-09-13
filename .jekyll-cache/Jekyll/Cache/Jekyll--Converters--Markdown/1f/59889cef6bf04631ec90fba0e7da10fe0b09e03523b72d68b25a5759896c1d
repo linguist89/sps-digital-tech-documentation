@@ -1,0 +1,18 @@
+I"�<h1 id="adding-a-chart">Adding a chart</h1>
+<p>Charts have two properties which are needed to create them <code>chart_info</code> and <code>chart_build_details</code>. The easiest way to add them to a form is via the client code, so that you can customize their heights and add them to a flow panel grid. The form name is <code>GenericChart</code> and they have been designed to be able to use them without other dependencies.</p>
+
+<h2 id="chart_info">Chart_info</h2>
+<p><code>chart_info</code> is a dictionary that must contain the following data:</p>
+
+<ul>
+  <li><code>chart_number</code> - this is used when the chart is created to make sure that the chart has a unique id, so that it doesn’t conflict with other charts being created. The charts’ ids take the form <code>generic-chart</code> + chart_number.</li>
+  <li><code>labels</code> - this is a list if <code>str</code> that will be the labels of the x-axis of the chart.</li>
+  <li><code>data</code> - this is a list of <code>int</code> or <code>float</code> which be the x-axis data.</li>
+</ul>
+
+<p>Examples of adding these are available with all templates that have charts on them as well as databases that contain synthetic data to illustrate the type of data required.</p>
+
+<h2 id="chart_build_details">Chart_build_details</h2>
+
+<p>In <code>MainModule</code> there is a function called <code>get_chart_build_details</code> which takes as a parameter the <code>chart_info</code> and returns the <code>chart_build_details</code> variable. This variable is consistent with the dictionary syntax that is needed to create the chart in Javascript, so there isn’t a need to change this unless you want to customize the charts, but then you would need to know how the Javascript syntax works.</p>
+:ET

@@ -1,0 +1,7 @@
+I"q<h1 id="data-tables">Data Tables</h1>
+<p>Data tables have a <code>table_number</code> property to give the data table a unique id when it’s added to a form. You need to pass in two other variables:</p>
+<ul>
+  <li><code>column_names</code> - these are going to be the names for the columns. You can add as many columns as you want, just as long as the number of column names and the data match in size.</li>
+  <li><code>table_data</code> - this needs to be a list of tuples. Each tuple has the same number of elements as the number of column names and they need to be in the same order to match the column names.</li>
+</ul>
+:ET

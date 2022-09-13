@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Charts
-navigation: 2
+navigation: 3
 ---
 
 # Adding a chart
-Charts have two properties which are needed to create them `chart_info` and `chart_build_details`. 
+Charts have two properties which are needed to create them `chart_info` and `chart_build_details`. The easiest way to add them to a form is via the client code, so that you can customize their heights and add them to a flow panel grid. The form name is `GenericChart` and they have been designed to be able to use them without other dependencies.
 
-## The variable `chart_info`
+## Chart_info
 `chart_info` is a dictionary that must contain the following data:
 
 
@@ -17,6 +17,6 @@ Charts have two properties which are needed to create them `chart_info` and `cha
 
  Examples of adding these are available with all templates that have charts on them as well as databases that contain synthetic data to illustrate the type of data required.
 
-## The variable `chart_build_details`
+## Chart_build_details
 
-`chart_build_details` is what gets passed to the Javascript function to create the charts from the Javascript code. In `MainModule` there is a function called `get_chart_build_details` which takes as a parameter the `chart_info` and returns the `chart_build_details` variable. This variable is consistent with the dictionary syntax that is needed to create the chart in Javascript, so there isn't a need to change this unless you want to customize the charts, but then you would need to know how the Javascript syntax works.
+In `MainModule` there is a function called `get_chart_build_details` which takes as a parameter the `chart_info` and returns the `chart_build_details` variable. This variable is consistent with the dictionary syntax that is needed to create the chart in Javascript, so there isn't a need to change this unless you want to customize the charts, but then you would need to know how the Javascript syntax works.
